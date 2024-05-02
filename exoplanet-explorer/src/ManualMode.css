@@ -1,0 +1,89 @@
+.manual-mode-container {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.manual-mode-container h2 {
+    color: #373834;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.manual-mode-container .section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.manual-mode-container .section h3 {
+    color: #555;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.manual-mode-container .section .divider {
+    flex-grow: 1;
+    border-top: 1px solid #ccc;
+    margin: 0 20px;
+}
+
+.manual-mode-container .inputs-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.manual-mode-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 18px;
+}
+
+.manual-mode-container input[type="number"] {
+    width: 200px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.manual-mode-container input[type="number"]:focus {
+    outline: none;
+    border-color: #556575;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.manual-mode-container button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #394c61;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.manual-mode-container button:hover {
+    background-color: #569ce7;
+}
+
+.manual-mode-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.manual-mode-container li {
+    margin-bottom: 10px;
+}
+
+.manual-mode-container .total-info {
+    margin-top: 20px;
+}
+
+.manual-mode-container .message {
+    color: #f09e9e;
+    margin-top: 10px;
+}

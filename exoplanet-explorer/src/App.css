@@ -1,0 +1,140 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #383636;
+  color: #ffffff46;
+}
+
+.dark-mode .controls label,
+.dark-mode .spacecraft-info h2,
+.dark-mode .spacecraft-info p,
+.dark-mode .instrument-info span,
+.dark-mode .selected-instruments li,
+.dark-mode .selected-instruments p,
+.dark-mode h1,
+.dark-mode h2 {
+  color: #a19b9b; 
+}
+
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.controls label {
+  margin-left: 10px;
+}
+
+.message {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.controls input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.controls input[type="checkbox"]:checked {
+  background-color: #009688;
+}
+
+.controls input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.controls input[type="checkbox"]:checked::before {
+  transform: translateX(20px) translateY(-50%);
+}
+
+.instrument-list {
+  list-style: none;
+  padding: 0;
+}
+
+.instrument-list li {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.instrument-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.selected-instruments {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.total-info {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.total-info p {
+  margin: 5px 0;
+}
+
+.spacecraft-info {
+  margin-bottom: 20px;
+}
+
+.spacecraft-info h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.spacecraft-info p {
+  margin: 5px 0;
+  color: #555;
+}
