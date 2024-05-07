@@ -1,0 +1,67 @@
+.exoplanet-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.spacecraft-info,
+.instrument-selection,
+.selected-instruments {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2b4157;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #2b4157;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 0;
+}
+
+.total-info {
+  text-align: right;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .button-container button {
+  background-color: #394c61;
+}
+
+.dark-mode .button-container button:hover {
+  background-color: #8f97a0;
+}
+
+.dark-mode .exoplanet-container h2 {
+  color: #f0f0f0; /* Light color for better UI experience */
+}
